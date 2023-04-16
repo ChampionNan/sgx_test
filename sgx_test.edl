@@ -1,0 +1,20 @@
+// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+
+enclave {
+    from "openenclave/edl/sgx/cpu.edl" import *;
+
+    trusted {
+        public void enclave_sgx_test(
+          [user_check]int *array,
+          int size,
+          [user_check]int *array2,
+          int size2);
+    };
+
+    untrusted {
+      void ocall_print_string([in, string] const char *str);
+    };
+
+};
+

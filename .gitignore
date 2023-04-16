@@ -1,0 +1,19 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# sgx generated files
+*_args.h
+*_t.*
+oqsortenc
+*.pem
+*_u.*
+out.txt
+*.txt
+config*
+
+# .vscode
+.vscode/*.log
+
