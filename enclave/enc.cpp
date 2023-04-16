@@ -37,7 +37,7 @@ void enclave_sgx_test(int *array, int size, int *array2, int size2)
       sum1 += a[array2[i]].sortKey;
       sum2 += a[array2[i]].primaryKey;
     }
-    printfE("Host sum1: %d, sum2: %d\n", sum1, sum2);
+    printfE("Enclave sum1: %d, sum2: %d\n", sum1, sum2);
     printfE("Enclave Address: %ld\n", array);
     return;
 }
